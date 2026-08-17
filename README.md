@@ -4,6 +4,8 @@ This is a small Google Chrome extension for ChatGPT.
 
 Click the button and the text direction changes. Click it again and it changes back. That's it.
 
+![The RTL/LTR direction button inside the ChatGPT prompt box](screenshots/chatgpt-rtl-toggle.jpg)
+
 ## Install from the Chrome Web Store
 
 Coming soon.
