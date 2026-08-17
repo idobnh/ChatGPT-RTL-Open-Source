@@ -1,0 +1,68 @@
+.chat-direction-toggle {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  color: currentColor;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.72;
+}
+
+.chat-direction-toggle:hover {
+  background: rgba(0, 0, 0, 0.08);
+  opacity: 1;
+}
+
+.dark .chat-direction-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chat-direction-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.chat-direction-toggle__icon {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: square;
+}
+
+.chat-direction-toggle[data-direction="rtl"] .chat-direction-toggle__icon {
+  transform: scaleX(-1);
+}
+
+html[data-chat-direction="ltr"] #prompt-textarea,
+html[data-chat-direction="ltr"] [data-message-author-role] .markdown,
+html[data-chat-direction="ltr"] [data-message-author-role] .whitespace-pre-wrap {
+  direction: ltr !important;
+  text-align: start !important;
+}
+
+html[data-chat-direction="rtl"] #prompt-textarea,
+html[data-chat-direction="rtl"] [data-message-author-role] .markdown,
+html[data-chat-direction="rtl"] [data-message-author-role] .whitespace-pre-wrap {
+  direction: rtl !important;
+  text-align: start !important;
+}
+
+html[data-chat-direction] [data-message-author-role] :is(
+  pre,
+  code,
+  kbd,
+  samp,
+  .katex,
+  math
+) {
+  direction: ltr !important;
+  text-align: left !important;
+}
