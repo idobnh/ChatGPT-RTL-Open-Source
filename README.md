@@ -8,7 +8,7 @@ Click the button and the text direction changes. Click it again and it changes b
 
 ## Install from the Chrome Web Store
 
-Coming soon.
+https://chromewebstore.google.com/detail/chatgpt-rtl-open-source/bdnnhdlcagnmojdegdflgedfnbbjhfnj
 
 ## What it does
 
